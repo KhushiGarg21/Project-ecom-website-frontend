@@ -1,0 +1,375 @@
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+} 
+
+/*r giving the header color align all the header ie (logo, buttons, padding obase color oheader only)*/
+#header {
+    display: flex; /* all content in same graph , try by removing this*/ 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: black;
+    
+} 
+
+.search{
+    width: 500px;
+    display: flex;
+}
+.search-box{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-transform: capitalize;
+    background: white;
+    color: white;
+    outline: none;
+
+}
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: black;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.dropbtn {
+    padding: flex;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.dropdown-content a{
+    color: #fff;
+}
+.dropdown-content a:hover{
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content a:hover {background-color: black; color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*r giving them horizonatl align */ 
+#navbar{ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* removing bullets */
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* removing lines under the button */
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+/* while pointing cursor to the buttons, color would be change */
+#navbar li a:hover,
+#navbar li a.active{ /* For activate the color permanently on head we made class = active */
+    color: white;
+}
+
+
+/* while pointing cursor to the button, it would be highlight 
+#navbar li a.active::after{
+}*/
+
+#hero{
+    
+    background-image: url("img/about/banner.png");
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    display: flex; /* for making in same graph as bg image */
+    align-items: flex-start;
+    flex-direction: column; 
+    padding: 60 10;
+    justify-content: center;
+    padding-left: 50px;
+    
+}
+#hero h4 {
+    padding-bottom: 15px;
+}
+#hero h1 {
+    color: #088178;
+}
+#hero button {
+    background-image: url("");
+    background-color: transparent;
+    color:#088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+}
+#feature{
+    
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#feature .fe-box{
+    display: flex;
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0 0 0 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 34px rgba(70,62,221,0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{ /*Font color shipping*/
+    padding: 9px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}    
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+.section-p1{
+    padding: 40px, 80px;
+}
+.section-p2{
+    columns: 2;
+    column-gap: 16px;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#sm-banner1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 700px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+}
+#sm-banner .banner-box1{
+    background-image: url("img/banner/b4.jpg");
+    min-width: 780px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+    margin-right: 50%;
+}
+#sm-banner1 .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b22.jfif");
+    min-width: 700px;
+    height: 50vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+}
+#sm-banner1 .banner-box3{
+    background-image: url("img/banner/b23.jfif");
+    min-width: 780px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px;
+    margin-right: 50%;
+}
+
+#sm-banner h3{
+    font-size: 30px;
+    padding-top: 60;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner button{
+    padding: 10px;
+}
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+.container{
+    max-width: 1170px;
+    background-color: black;
+    margin: auto;
+
+}
+
+#align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: black;
+}
+.row{
+    display:flex
+    
+}
+.row a{
+    display: flex;
+    color: white;
+    font: 20px;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h5{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color:white;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #e91e63;
+    padding-left: 8px;
+}
+.footer-col .social-links a{ /*try removing a and see the change */
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    width: 30px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 25px; /* increase the size font */
+}
+
+/*-----------shop-------*/
+
+#page header{
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}

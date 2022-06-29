@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first-->
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js"></script>
+
+    <script src="Login.js"></script>
+
+    <section id="header"> <!--header-->
+        <img src="logo.jpeg"><i class="logo" ></i>
+        <nav class="navbar">
+            <div class="nav">
+                <div class="nav-items">
+                    <div class="search">
+                        <input type="text" class="search-box" placeholder="search brand, product">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+            <ul id="navbar">
+        <!--    <div class="dropdown">
+                <li><button class="dropbtn">CATEGORY</button>
+                    <div class="dropdown-content">
+                            <a href="#"> Clothes </a>
+                            <a href="#">Jewelery </a>
+                            <a href="#">Footwear </a>
+                            <a href="#">Glasses</a>
+                            <a href="#">Electronics</a>
+                    </div>
+                </li>
+                </div>
+        -->
+                <li><a href="h1.html"> HOME </a></li>
+                <li><a href="shop.html"> SHOP </a></li>
+                <li><a href="Login.html"> LOGIN </a></li>
+                
+                <li><a href="cart.html"> <i class="far fa-shopping-bag"> </i> </a></li>
+            </ul>
+    </section>
+
+    <section id="login">
+    <!--login content-->
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Paswword?</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
+    </div>
+    </section>
+    
+    <section> <!--footer-->
+        <footer class="footer">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4> company </h4>
+                        <ul>    
+                            <li><a href="#">our service</a></li>
+                            <li><a href="#">privacy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4> Contact </h4>
+                        <h5> Address: 562 Washington Road, street 22, San Feancisco</h5>
+                        <h5> Phone: +918307462585</h5>
+                        <h5> 10:00 - 18:00 Mon-Sat </h5>
+                    </div>
+                    <div class="footer-col">
+                        <h4> GET HELP </h4>
+                        <ul>
+                            <li><a href="#">fAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4> ONLINE SHOPPING </h4>
+                        <ul>
+                            <li><a href="#">Clothes</a></li>
+                            <li><a href="#">Jewelery</a></li>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Glasses</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Groceries</a></li>
+                        
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 >FOLLOW US </h4>
+                        <div class="social-links">
+                        
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </section>
+</body>
+</html>
